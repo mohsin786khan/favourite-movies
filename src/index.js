@@ -8,7 +8,7 @@ import movies from './reducers.js';
 
 
  const store = createStore(movies);
- console.log(' yes store', store);
+ console.log('store created', store);
 // console.log(' BEFORE STATE', store.getState());
 
 // store.dispatch({
@@ -16,7 +16,7 @@ import movies from './reducers.js';
 // movies:[{name:'superman'}]
 // });
 
-// console.log('A STATE',store.getState());
+// console.log('AFTER STATE',store.getState());
 
 ReactDOM.render(<App store={store}/>, document.getElementById('root'));
 
